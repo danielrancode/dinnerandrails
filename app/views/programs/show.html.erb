@@ -1,0 +1,5 @@
+
+
+<%= link_to @program.restaurant.name, restaurant_path(@program.restaurant)%> + <%= link_to @program.event.title, event_path(@program.event)%></li>
+<br><br><br>
+<%= link_to "back to #{@user.name}'s programs", user_programs_path(@user) %>

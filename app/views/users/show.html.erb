@@ -6,3 +6,5 @@
 <% end %>
 
 <%= link_to 'edit user', edit_user_path(@user) %>
+<br><br><br>
+<%= link_to "all of #{@user.name}'s programs", user_programs_path(@user) %>

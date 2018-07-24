@@ -1,0 +1,9 @@
+<h3><%= @user.name %>'s Programs</h1>
+<ul>
+  <% @programs.each do |p| %>
+  <li>id: <%= p.id %> --------> <%= link_to p.restaurant.name, restaurant_path(p.restaurant) %> + <%= link_to p.event.title, event_path(p.event) %></li>
+  <% end %>
+</ul>
+
+<br><br><br>
+<%= link_to 'back to user', user_path(@user) %>
