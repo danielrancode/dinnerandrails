@@ -1,0 +1,8 @@
+<h1><%= @user.name %></h1>
+
+<h3>Programs:</h3>
+<% @programs.each do |p| %>
+  <li><%= link_to p.restaurant.name, restaurant_path(p.restaurant)%> + <%= link_to p.event.title, event_path(p.event)%></li>
+<% end %>
+
+<%= link_to 'edit user', edit_user_path(@user) %>

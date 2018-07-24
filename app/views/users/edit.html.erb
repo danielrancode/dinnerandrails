@@ -1,0 +1,13 @@
+<br>
+<%= form_for @user do |f| %>
+  <%= f.text_field :name %><br><br>
+  <%= f.submit %><br>
+<% end %>
+
+<br><br>
+
+<%= button_to "Delete User", @user, method: :delete %>
+
+<br><br>
+
+<%= link_to "Back", user_path(@user) %>
